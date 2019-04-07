@@ -1,7 +1,7 @@
 # bfCrawler.js
 Node js bruteforce web crawler. bruteforce form .txt file
 
-# I take no responsibility for how you use this software.
+# I take no responsibility for how or where you use this software.
 
 use it for good.
 
