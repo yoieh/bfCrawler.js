@@ -1,5 +1,5 @@
 # bfCrawler.js
-Node js bruteforce web crawler. bruteforce with .txt file
+Node js bruteforce web crawler. bruteforce form .txt file
 
 # I take no responsibility for how you use this software.
 
