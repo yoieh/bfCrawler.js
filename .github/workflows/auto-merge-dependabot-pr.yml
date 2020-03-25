@@ -1,0 +1,19 @@
+name: Auto merge dependabot pr 
+
+on:
+  pull_request
+jobs:
+  auto-approve:
+    if: github.actor == 'dependabot[bot]' || github.actor == 'dependabot-preview[bot]'
+    runs-on: ubuntu-latest
+    steps:
+    - uses: hmarr/auto-approve-action@v2.0.0
+      with:
+        github-token: "${{ secrets.GITHUB_TOKEN }}"
+    - name: Merge me!
+      uses: ridedott/merge-me-action@v1.1.36
+      with:
+        # A GitHub token.
+        GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+        # The GitHub login for which automatic merges are enabled.
+#         GITHUB_LOGIN: # optional, default is dependabot-preview[bot]:  
